@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Z K Misri | Best Neurologist in Mangalore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy: #0f1419;
+      --navy-dark: #050a0f;
+      --navy-light: #1a2332;
+      --gold: #d4af37;
+      --gold-light: #e8d4b8;
+      --accent-blue: #2c5aa0;
+      --text: #1a1f2e;
+      --text-light: #6b7280;
+      --border: #e5e7eb;
+      --white: #ffffff;
+      --bg: #f9fafb;
+      --card: #ffffff;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      height: 72px;
+      transition: height 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 12px rgba(15, 20, 25, 0.06);
+    }
+
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .nav-brand strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+
+    .nav-brand span {
+      font-size: 0.68rem;
+      color: var(--text-light);
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-light);
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .btn-call {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.5rem 1.3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      border: 1px solid var(--navy);
+    }
+
+    .btn-call:hover {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    .btn-wa {
+      background: #25D366;
+      color: #fff;
+      padding: 0.5rem 1.3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid #25D366;
+    }
+
+    .btn-wa:hover {
+      background: #1ab558;
+      border-color: #1ab558;
+      transform: translateY(-2px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      width: 22px;
+      height: 2px;
+      background: var(--navy);
+      border-radius: 2px;
+      display: block;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 6%;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 190;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ─── HERO SECTION ─── */
+    #hero {
+      min-height: 100vh;
+      padding: 100px 6% 70px;
+      background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #eff0f3 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-blob {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .hero-blob-1 {
+      top: -100px;
+      right: -50px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, var(--gold), transparent 70%);
+      animation: blobDrift 8s ease-in-out infinite;
+    }
+
+    .hero-blob-2 {
+      bottom: -80px;
+      left: 5%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--accent-blue), transparent 70%);
+      animation: blobDrift2 10s ease-in-out infinite;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 5rem;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #fff;
+      border: 1.5px solid var(--gold);
+      border-radius: 50px;
+      padding: 0.4rem 1.1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .hero-pill::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: block;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+      animation: fadeUp 0.65s 0.08s ease both;
+      color: var(--navy);
+      letter-spacing: -1px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      max-width: 520px;
+      margin-bottom: 2.2rem;
+      animation: fadeUp 0.65s 0.16s ease both;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      animation: fadeUp 0.65s 0.24s ease both;
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid var(--navy);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(212, 175, 55, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 2px solid var(--navy);
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+    }
+
+    .btn-outline:hover {
+      background: var(--navy);
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      margin-top: 3rem;
+      animation: fadeUp 0.65s 0.32s ease both;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      font-weight: 600;
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ─── HERO CARD ─── */
+    .hero-card {
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(15, 20, 25, 0.12);
+      padding: 2.8rem 2.2rem;
+      text-align: center;
+      position: relative;
+      animation: fadeUp 0.8s 0.2s ease both, floatCard 5s 1.2s ease-in-out infinite;
+      border: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      border-radius: 28px 28px 0 0;
+      background: linear-gradient(90deg, var(--gold), var(--accent-blue));
+    }
+
+    .doctor-image {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 0 auto 1.6rem;
+      background: linear-gradient(135deg, var(--gold-light), #f0f4f8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 28px rgba(15, 20, 25, 0.15);
+      animation: pulse 3s ease-in-out infinite;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    .doctor-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      color: var(--navy);
+    }
+
+    .hero-card .quals {
+      font-size: 0.8rem;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .hero-card .role {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 1.6rem;
+      font-weight: 500;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .card-tag {
+      background: linear-gradient(135deg, var(--gold-light), #fef5e7);
+      color: var(--navy);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.35rem 0.95rem;
+      border-radius: 50px;
+      border: 1px solid var(--gold);
+    }
+
+    .rating-box {
+      background: linear-gradient(135deg, #fffbf0, #fff8e6);
+      border-radius: 14px;
+      padding: 1rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+
+    .rating-info strong {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .rating-info span {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatCard {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes blobDrift {
+      0%,
+      100% {
+        transform: scale(1) translate(0, 0);
+      }
+      50% {
+        transform: scale(1.08) translate(15px, -12px);
+      }
+    }
+
+    @keyframes blobDrift2 {
+      0%,
+      100% {
+        transform: scale(1) translate(0, 0);
+      }
+      50% {
+        transform: scale(1.06) translate(-10px, 10px);
+      }
+    }
+
+    @keyframes pulse {
+      0%,
+      100% {
+        box-shadow: 0 8px 28px rgba(15, 20, 25, 0.15);
+      }
+      50% {
+        box-shadow: 0 8px 40px rgba(212, 175, 55, 0.25);
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-36px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(36px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ─── SECTIONS ─── */
+    section {
+      padding: 100px 6%;
+    }
+
+    .section-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      max-width: 580px;
+    }
+
+    /* ─── ABOUT SECTION ─── */
+    #about {
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5.5rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    .about-img {
+      background: linear-gradient(135deg, var(--gold-light), #f0f4f8);
+      border-radius: 28px;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(15, 20, 25, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin: 1.8rem 0;
+    }
+
+    .about-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--gold-light), #fef5e7);
+      border: 1.5px solid var(--gold);
+      border-radius: 50px;
+      padding: 0.45rem 1.1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .about-badge::before {
+      content: '✓';
+      color: var(--accent-blue);
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .about-quote {
+      border-left: 4px solid var(--gold);
+      padding-left: 1.4rem;
+      font-style: italic;
+      color: var(--text-light);
+      line-height: 1.8;
+      font-size: 1rem;
+      margin-top: 1.8rem;
+    }
+
+    /* ─── SERVICES SECTION ─── */
+    #services {
+      background: var(--bg);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin-top: 3.5rem;
+    }
+
+    .service-card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 24px;
+      padding: 2.2rem 1.9rem;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--accent-blue));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(15, 20, 25, 0.12);
+      border-color: var(--gold);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      font-size: 2.6rem;
+      margin-bottom: 1.2rem;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover .service-icon {
+      transform: scale(1.2) rotate(-5deg);
+    }
+
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      color: var(--navy);
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ─── HOURS SECTION ─── */
+    #hours {
+      background: var(--white);
+    }
+
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.5rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      transition: background 0.2s;
+    }
+
+    .hours-row:hover {
+      background: linear-gradient(135deg, var(--gold-light), #fef5e7);
+    }
+
+    .hours-row:not(:last-child) {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .day {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--navy);
+    }
+
+    .time {
+      font-size: 0.9rem;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .time.closed {
+      color: #e74c3c;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+      border-radius: 24px;
+      padding: 2.6rem;
+      color: #fff;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .contact-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.6rem;
+      color: var(--gold);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .contact-item-icon {
+      font-size: 1.4rem;
+      margin-top: 0.2rem;
+      color: var(--gold);
+    }
+
+    .contact-item-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-item-text strong {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-item-text a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .contact-item-text a:hover {
+      color: var(--gold);
+    }
+
+    /* ─── TESTIMONIALS SECTION ─── */
+    #testimonials {
+      background: var(--bg);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin-top: 3.5rem;
+    }
+
+    .testimonial-card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 24px;
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(15, 20, 25, 0.12);
+      border-color: var(--gold);
+    }
+
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.1em;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 1.6rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-info strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--navy);
+      margin-bottom: 0.2rem;
+    }
+
+    .testimonial-info span {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    /* ─── FAQ SECTION ─── */
+    #faq {
+      background: var(--white);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem;
+      margin-top: 3rem;
+    }
+
+    .faq-item {
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+
+    .faq-item:hover {
+      border-color: var(--gold);
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.1);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: var(--white);
+      border: none;
+      padding: 1.4rem;
+      text-align: left;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+
+    .faq-q:hover {
+      background: var(--bg);
+    }
+
+    .faq-icon {
+      font-size: 1.2rem;
+      color: var(--gold);
+      transition: transform 0.3s;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: var(--bg);
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding: 0 1.4rem 1.4rem;
+    }
+
+    .faq-a {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* ─── LOCATION SECTION ─── */
+    #location {
+      background: var(--bg);
+    }
+
+    .map-wrap {
+      margin-top: 2.5rem;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(15, 20, 25, 0.12);
+      border: 1px solid var(--border);
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+
+    /* ─── BOOKING SECTION ─── */
+    #book {
+      background: var(--white);
+    }
+
+    .book-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .book-card {
+      background: linear-gradient(135deg, var(--bg), #f3f4f6);
+      border: 1.5px solid var(--border);
+      border-radius: 24px;
+      padding: 3rem;
+      margin-top: 2.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 0.6rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.9rem 1.1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    }
+
+    .form-group textarea {
+      grid-column: 1 / -1;
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 1rem 1.6rem;
+      background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 1rem;
+    }
+
+    .form-submit:hover {
+      background: var(--gold);
+      color: var(--navy);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(212, 175, 55, 0.25);
+    }
+
+    .book-note {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+
+    .book-note a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+      color: #fff;
+      padding: 4rem 6% 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .footer-brand strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .footer-brand span {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-col h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      color: var(--gold);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-col a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer-bottom p {
+      margin: 0.4rem 0;
+    }
+
+    /* ─── FLOATING WA ─── */
+    .float-wa {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s;
+      z-index: 150;
+      animation: waBounce 2s ease-in-out infinite;
+    }
+
+    .float-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.45);
+    }
+
+    @keyframes waBounce {
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+      50% {
+        transform: translateY(-6px) scale(1.05);
+      }
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hours-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 0 4%;
+        height: 60px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      #hero {
+        padding: 80px 4% 50px;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 4%;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stats {
+        gap: 1.5rem;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .float-wa {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-brand">
+      <strong>Dr. Z K Misri</strong>
+      <span>Neurologist</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+918001024647" class="btn-call">📞 Call</a>
+      <a href="https://wa.me/918001024647?text=Hello%20Dr.%20Misri%2C%20I%20would%20like%20to%20book%20a%20consultation." class="btn-wa">💬 WhatsApp</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#hours">Hours</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#location">Location</a>
+    <div class="mobile-btns">
+      <a href="tel:+918001024647" class="btn-call">📞 Call</a>
+      <a href="https://wa.me/918001024647" class="btn-wa">💬 WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="hero-inner">
+      <div>
+        <div class="hero-pill">✨ Top Rated Neurologist</div>
+        <h1 class="hero-title">Expert <em>Neurological Care</em> in Mangalore</h1>
+        <p class="hero-sub">With over 30 years of experience, Dr. Z K Misri provides comprehensive neurological treatment for stroke, epilepsy, migraine, Parkinson's, and more. Trusted by thousands of patients across Mangalore.</p>
+        <div class="hero-btns">
+          <a href="#book" class="btn-primary">📅 Book Appointment</a>
+          <a href="#services" class="btn-outline">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">30+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4.5★</div>
+            <div class="stat-label">Patient Rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">10K+</div>
+            <div class="stat-label">Patients Treated</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="doctor-image">
+          <img src="doctor-1.png" alt="Dr. Z K Misri" />
+        </div>
+        <h3>Dr. Z K Misri</h3>
+        <div class="quals">MBBS, MD, DM (Neurology)</div>
+        <div class="role">Senior Consultant Neurologist</div>
+        <div class="card-tags">
+          <span class="card-tag">Stroke Specialist</span>
+          <span class="card-tag">Epilepsy Expert</span>
+          <span class="card-tag">Movement Disorders</span>
+        </div>
+        <div class="rating-box">
+          <div class="rating-info">
+            <strong>4.5 ★</strong>
+            <span>Google Reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="section-wrap">
+      <div class="section-eyebrow">About the Doctor</div>
+      <h2 class="section-title">Meet Dr. Z K Misri</h2>
+
+      <div class="about-grid">
+        <div class="about-img reveal-left">
+          <img src="doctor-4.png" alt="Dr. Z K Misri" />
+        </div>
+        <div class="reveal-right">
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-light); margin-bottom: 1.4rem;">Dr. Z K Misri is a highly accomplished senior consultant neurologist with over 30 years of clinical experience. He is an Associate Professor of Neurology at Kasturba Medical College (KMC) and serves as a PhD guide for Manipal University.</p>
+
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-light); margin-bottom: 1.6rem;">Specializing in cerebrovascular disease, stroke management, epilepsy, movement disorders, and general neurology, Dr. Misri has treated thousands of patients with complex neurological conditions. His approach combines cutting-edge medical knowledge with compassionate patient care.</p>
+
+          <div class="about-badges">
+            <div class="about-badge">30+ Years Experience</div>
+            <div class="about-badge">Associate Professor KMC</div>
+            <div class="about-badge">PhD Guide Manipal University</div>
+            <div class="about-badge">Stroke Specialist</div>
+            <div class="about-badge">Epilepsy Expert</div>
+            <div class="about-badge">Movement Disorders</div>
+          </div>
+
+          <div class="about-quote">"My goal is to provide world-class neurological care with a personal touch, ensuring every patient receives the attention and treatment they deserve."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Specializations</div>
+      <h2 class="section-title">Comprehensive Neurological Care</h2>
+      <p class="section-sub">Expert diagnosis and treatment across a wide range of neurological conditions.</p>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🧠</div>
+          <h3>Stroke & Cerebrovascular Disease</h3>
+          <p>Acute stroke management, prevention strategies, and rehabilitation for cerebrovascular conditions.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">⚡</div>
+          <h3>Epilepsy Management</h3>
+          <p>Comprehensive epilepsy diagnosis, medication management, and surgical consultation when needed.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🚶</div>
+          <h3>Movement Disorders</h3>
+          <p>Specialized care for Parkinson's disease, tremor, dystonia, and other movement disorders.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🤕</div>
+          <h3>Migraine & Headaches</h3>
+          <p>Advanced migraine management, preventive therapy, and headache disorder treatment.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">😴</div>
+          <h3>Sleep Disorders</h3>
+          <p>Diagnosis and management of insomnia, sleep apnea, and other sleep-related conditions.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🧬</div>
+          <h3>Neurodegenerative Diseases</h3>
+          <p>Care for Alzheimer's, dementia, ALS, and other progressive neurological conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS SECTION -->
+  <section id="hours">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Clinic Details</div>
+      <h2 class="section-title">Clinic Hours & Contact</h2>
+
+      <div class="hours-grid">
+        <div>
+          <div class="hours-row reveal">
+            <span class="day">Monday</span>
+            <span class="time">9:30 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-row reveal">
+            <span class="day">Tuesday</span>
+            <span class="time">9:30 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-row reveal">
+            <span class="day">Wednesday</span>
+            <span class="time">12:00 PM - 6:00 PM</span>
+          </div>
+          <div class="hours-row reveal">
+            <span class="day">Thursday</span>
+            <span class="time">2:30 PM - 6:00 PM</span>
+          </div>
+          <div class="hours-row reveal">
+            <span class="day">Friday</span>
+            <span class="time">2:30 PM - 6:00 PM</span>
+          </div>
+          <div class="hours-row reveal">
+            <span class="day">Saturday</span>
+            <span class="time">9:00 AM - 1:00 PM</span>
+          </div>
+          <div class="hours-row reveal">
+            <span class="day">Sunday</span>
+            <span class="time closed">Closed</span>
+          </div>
+        </div>
+
+        <div class="contact-box reveal">
+          <h3>📍 Get in Touch</h3>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text">
+              <strong>Call Us</strong>
+              <a href="tel:+918001024647">1800 102 4647</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">💬</div>
+            <div class="contact-item-text">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/918001024647">Chat with us</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <strong>Address</strong>
+              <span style="color: rgba(255,255,255,0.8)">1st Floor, KMC Hospital<br>Dr. B R Ambedkar Circle<br>Mangaluru, Karnataka 575001</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🏥</div>
+            <div class="contact-item-text">
+              <strong>Associated With</strong>
+              <span style="color: rgba(255,255,255,0.8)">KMC Hospital & Indiana Hospital</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Patient Reviews</div>
+      <h2 class="section-title">What Patients Say</h2>
+      <p class="section-sub">Trusted by thousands of satisfied patients across Mangalore.</p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Dr. Misri is an exceptional neurologist. His expertise and compassionate approach made me feel confident about my treatment. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div class="testimonial-info">
+              <strong>Rajesh Kumar</strong>
+              <span>Google Review · Verified Patient</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The best neurologist in Mangalore. Very knowledgeable, patient, and takes time to explain everything clearly. Masha'Allah!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">F</div>
+            <div class="testimonial-info">
+              <strong>Faseela Shemeer</strong>
+              <span>Google Review · Verified Patient</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★☆</div>
+          <p class="testimonial-text">"Dr. Misri's consultation is very good and he's soft-spoken. The treatment plan he recommended has really helped me recover well."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">V</div>
+            <div class="testimonial-info">
+              <strong>Vineetha</strong>
+              <span>Google Review · Verified Patient</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Common Questions</div>
+      <h2 class="section-title">Frequently Asked</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">Do I need a referral to see Dr. Misri?<span class="faq-icon">+</span></button>
+          <div class="faq-a">No referral is required. You can visit the clinic directly during consultation hours or book an appointment by phone or WhatsApp. Bringing previous medical reports or imaging studies helps for a thorough review.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">What conditions does Dr. Misri treat?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Dr. Misri specializes in stroke, epilepsy, migraine, Parkinson's disease, movement disorders, sleep disorders, neurodegenerative diseases, and general neurological conditions. He provides both acute and chronic care management.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">What should I bring for my first appointment?<span class="faq-icon">+</span></button>
+          <div class="faq-a">Please bring a valid ID, insurance card (if applicable), list of current medications, and any previous medical reports, imaging studies, or test results related to your neurological condition.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">How do I book an appointment?<span class="faq-icon">+</span></button>
+          <div class="faq-a">You can book by calling 1800 102 4647, messaging on WhatsApp, or using the appointment form on this page. Walk-ins are also welcome during clinic hours, though advance booking is recommended.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">Does Dr. Misri provide online consultations?<span class="faq-icon">+</span></button>
+          <div class="faq-a">For specific details about telemedicine services, please contact the clinic directly. Many follow-up consultations can be conducted online for your convenience.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">What is the consultation fee?<span class="faq-icon">+</span></button>
+          <div class="faq-a">The consultation fee is ₹400. Please call ahead to confirm current fees and any special packages. Insurance coverage may be available depending on your policy.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION SECTION -->
+  <section id="location">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Find Us</div>
+      <h2 class="section-title">Clinic Location</h2>
+      <p class="section-sub">1st Floor, KMC Hospital, Dr. B R Ambedkar Circle, Mangaluru, Karnataka 575001</p>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0!2d74.8520!3d12.8698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b4d8be3af67%3A0x9be3ec8ff5ca4d70!2sKMC%20Hospital%2C%20Mangaluru!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section id="book">
+    <div class="section-wrap book-inner">
+      <div class="section-eyebrow">Book Appointment</div>
+      <h2 class="section-title">Ready to Consult?</h2>
+      <p class="section-sub">Fill the form below and we'll confirm your appointment via WhatsApp. Walk-ins also welcome during clinic hours.</p>
+      <div class="book-card">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Full Name</label>
+            <input type="text" id="f-name" placeholder="Enter your name"/>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Age</label>
+            <input type="text" id="f-age" placeholder="e.g. 35 years"/>
+          </div>
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date" id="f-date"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Reason for Visit</label>
+          <select id="f-reason">
+            <option value="">Select a reason…</option>
+            <option>Stroke / Cerebrovascular Disease</option>
+            <option>Epilepsy / Seizures</option>
+            <option>Migraine / Headaches</option>
+            <option>Parkinson's Disease</option>
+            <option>Movement Disorders</option>
+            <option>Sleep Disorders</option>
+            <option>Neurodegenerative Disease</option>
+            <option>General Neurological Checkup</option>
+            <option>Second Opinion</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Brief Description (optional)</label>
+          <textarea id="f-note" placeholder="Describe your symptoms or concern…"></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">💬 Confirm via WhatsApp</button>
+        <p class="book-note">📞 Or call us directly: <a href="tel:+918001024647">1800 102 4647</a> · Mon–Sat during clinic hours</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>Dr. Z K Misri</strong>
+          <span>Senior Consultant Neurologist</span>
+          <p>Providing world-class neurological care with a personal touch. Serving patients across Mangalore and beyond with expertise, compassion, and excellence.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#hours">Clinic Hours</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#book">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+918001024647">📞 1800 102 4647</a></li>
+            <li><a href="https://wa.me/918001024647">💬 WhatsApp</a></li>
+            <li style="color: rgba(255,255,255,.55); font-size:.82rem; line-height:1.7">1st Floor, KMC Hospital<br>Dr. B R Ambedkar Circle<br>Mangaluru – 575001</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Dr. Z K Misri · Senior Consultant Neurologist · Mangalore · All Rights Reserved.</p>
+        <p>Mon, Tue, Wed, Thu, Fri, Sat: Clinic Hours Available · Sun: Closed</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a class="float-wa" href="https://wa.me/918001024647?text=Hello%20Dr.%20Misri%2C%20I%20would%20like%20to%20book%20a%20consultation." title="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    /* ── MOBILE MENU ── */
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    /* ── FAQ ACCORDION ── */
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    /* ── WHATSAPP FORM ── */
+    function submitForm() {
+      const name = document.getElementById('f-name').value || 'Patient';
+      const phone = document.getElementById('f-phone').value || '';
+      const age = document.getElementById('f-age').value || '';
+      const date = document.getElementById('f-date').value || '';
+      const reason = document.getElementById('f-reason').value || 'General Consultation';
+      const note = document.getElementById('f-note').value || '';
+      const msg = encodeURIComponent(`Hello Dr. Misri,\n\nI would like to book an appointment.\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nPreferred Date: ${date}\nReason: ${reason}${note ? '\nDetails: ' + note : ''}\n\nPlease confirm my slot. Thank you!`);
+      window.open(`https://wa.me/918001024647?text=${msg}`, '_blank');
+    }
+
+    /* ── NAV SHRINK ON SCROLL ── */
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        nav.style.height = '60px';
+        nav.style.boxShadow = '0 4px 24px rgba(15, 20, 25, 0.08)';
+      } else {
+        nav.style.height = '72px';
+        nav.style.boxShadow = '0 2px 12px rgba(15, 20, 25, 0.06)';
+      }
+    }, { passive: true });
+
+    /* ── SCROLL REVEAL ── */
+    document.querySelectorAll('.service-card').forEach((el, i) => {
+      el.style.transitionDelay = (i % 3 * 0.08) + 's';
+      el.classList.add('reveal');
+    });
+    document.querySelectorAll('.testimonial-card').forEach((el, i) => {
+      el.style.transitionDelay = (i * 0.1) + 's';
+      el.classList.add('reveal');
+    });
+    document.querySelectorAll('.faq-item').forEach((el, i) => {
+      el.style.transitionDelay = (i * 0.07) + 's';
+      el.classList.add('reveal');
+    });
+    document.querySelectorAll('.hours-row').forEach((el, i) => {
+      el.style.transitionDelay = (i * 0.06) + 's';
+      el.classList.add('reveal');
+    });
+    document.querySelectorAll('.about-badge').forEach((el, i) => {
+      el.style.transitionDelay = (i * 0.08) + 's';
+      el.classList.add('reveal');
+    });
+
+    const aboutImg = document.querySelector('.about-img');
+    const aboutText = document.querySelector('.about-grid > div:last-child');
+    if (aboutImg) aboutImg.classList.add('reveal-left');
+    if (aboutText) aboutText.classList.add('reveal-right');
+
+    document.querySelectorAll('.section-eyebrow, .section-title, .section-sub').forEach(el => {
+      el.classList.add('reveal');
+    });
+
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObs.observe(el));
+
+    /* ── COUNT-UP STATS ── */
+    function countUp(el, target, suffix, duration = 1400) {
+      const isDecimal = target % 1 !== 0;
+      let start = null;
+      const step = (ts) => {
+        if (!start) start = ts;
+        const progress = Math.min((ts - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const val = isDecimal ? (eased * target).toFixed(1) : Math.floor(eased * target);
+        el.textContent = val + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    const statsObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const nums = e.target.querySelectorAll('.stat-num');
+          nums[0] && countUp(nums[0], 30, '+');
+          nums[1] && countUp(nums[1], 4.5, '★');
+          nums[2] && countUp(nums[2], 10000, '+');
+          statsObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) statsObs.observe(heroStats);
+
+    /* ── CARD TAG STAGGER ON LOAD ── */
+    document.querySelectorAll('.card-tag').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'scale(.85)';
+      el.style.transition = `opacity .35s ease, transform .35s ease`;
+      setTimeout(() => {
+        el.style.opacity = '1';
+        el.style.transform = 'scale(1)';
+      }, 900 + i * 100);
+    });
+  </script>
+</body>
+</html>
